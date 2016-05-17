@@ -13,7 +13,6 @@ import java.io.PrintStream;
 import java.math.BigDecimal;
 import java.util.HashMap;
 import java.util.Map;
-import java.util.logging.Logger;
 
 /**
  *
@@ -56,4 +55,11 @@ public class PersistenceManager {
         }
     }
     
+    public synchronized void clear() {
+        summary.clear();
+    }
+    
+    HashMap getSummary() {
+        return summary;
+    }
 }

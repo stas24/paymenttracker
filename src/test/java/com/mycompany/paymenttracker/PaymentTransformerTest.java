@@ -32,5 +32,15 @@ public class PaymentTransformerTest {
     public void shouldThrowException() throws Exception {
         transformer.transform("USD RUB");
     }
+    
+    @Test(expected=Exception.class)
+    public void shouldThrowExceptionUppercase() throws Exception {
+        transformer.transform("uSd 1000");
+    }
+    
+    @Test(expected=Exception.class)
+    public void shouldThrowExceptionLength() throws Exception {
+        transformer.transform("USDD 1000");
+    }
 
 }

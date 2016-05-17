@@ -7,9 +7,6 @@ package com.mycompany.paymenttracker;
 
 import java.io.File;
 import java.io.FileInputStream;
-import java.io.IOException;
-import java.io.InputStream;
-import java.math.BigDecimal;
 import java.util.Scanner;
 import java.util.Timer;
 import java.util.TimerTask;
@@ -52,5 +49,6 @@ public class PaymentTracker {
                 System.out.println("Wrong format!");
             }                   
         }
+        timer.cancel();
     }
 }
