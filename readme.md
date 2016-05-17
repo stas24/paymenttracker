@@ -13,6 +13,9 @@ java -jar paymenttracker-1.0-SNAPSHOT.jar "D:\payments.txt"
 
 # Пример файла payments.txt
 >USD 100
+
 >RUB -3000
+
 >GRN 5
+
 >RUB 2000
