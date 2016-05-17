@@ -34,7 +34,7 @@ public class PaymentTracker {
             public void run() {
                 persistenceManager.out(System.out);
             }
-        }, 10*1000, 10*1000);
+        }, 60*1000, 60*1000);
         
         Scanner scanner = new Scanner(System.in);
         while (true) {
